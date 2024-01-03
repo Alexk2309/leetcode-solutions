@@ -14,11 +14,11 @@ class Solution:
             mid = (r + l) // 2
             print(mid)
             if target == nums[mid]: return mid
-
+            # [4,5,6,7,0,1,2]
+            #  l     m   t  r
             if target < nums[mid]:
-                # Since when the middle number is greater than the right number, and the target is less than the number on the left.
-                
-                # We have to search the right side of the middle.
+                # So the target is smaller than mid
+                # Since the middle number is greater than r, and the target is less than l
                 if nums[mid] > nums[r] and target < nums[l]:
                     l = mid + 1
                 else:

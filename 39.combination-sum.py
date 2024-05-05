@@ -12,8 +12,6 @@ class Solution:
 
         candidates.sort(reverse=True)
 
-        print(candidates)
-
         def backtrack(path, target):
             if target == 0:
                 return path
@@ -21,7 +19,6 @@ class Solution:
                 return
             for i in range(len(candidates)):
                 backtrack(path + [candidates[i]], target - candidates[i])
-
 
         res = []
         backtrack(res, target)

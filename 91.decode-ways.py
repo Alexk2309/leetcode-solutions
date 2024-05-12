@@ -9,8 +9,9 @@ class Solution:
     def numDecodings(self, s: str) -> int:
         if not s or s[0] == '0': return 0
 
-        n2, n1, currN  = 1, 1, 0
+        n2, n1 = 1, 1
         for i in range(2, len(s) + 1):
+            currN = 0
             if s[i - 1] != '0':
                 currN += n1
     
@@ -19,7 +20,6 @@ class Solution:
                 currN += n2
     
             n2, n1 = n1, currN
-            currN = 0 
 
         return n1
 

@@ -30,15 +30,10 @@ class Solution:
 
         for col in range(m):
             dfs(n - 1, col, heights[n - 1][col], alantic)
-            dfs(0, col, heights[0][col], pacific) 
-                
-
+            dfs(0, col, heights[0][col], pacific)
 
         alantic.intersection_update(pacific)
         return list(alantic)
-        
 
-
-        
 # @lc code=end
 

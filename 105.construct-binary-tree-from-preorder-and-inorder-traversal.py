@@ -23,6 +23,5 @@ class Solution:
         return root
 
 
-        
 # @lc code=end
 

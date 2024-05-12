@@ -7,7 +7,7 @@
 # @lc code=start
 class Solution:
     def uniquePaths(self, m: int, n: int) -> int:
-        
+
         memo = {}
         def dfs(x, y):
             if x < 0 or x >= m or y < 0 or y >= n: return 0
@@ -17,15 +17,11 @@ class Solution:
 
             res = dfs(x + 1, y) + dfs(x, y + 1)
             memo[(x, y)] = res
-            
+
             return res
-        
+
         return dfs(0, 0)
 
 
-
-
-
-        
 # @lc code=end
 

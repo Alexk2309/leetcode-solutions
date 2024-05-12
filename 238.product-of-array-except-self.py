@@ -19,10 +19,8 @@ class Solution:
         for i in range(n - 1, -1, -1):
             res[i] *= product
             product *= nums[i]
-        
+
         return res
 
-
-        
 # @lc code=end
 

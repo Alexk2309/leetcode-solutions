@@ -21,6 +21,6 @@ class Solution:
             return valid(node.left, minValue, node.val) and valid(node.right, node.val, maxValue)
 
         return valid(root, float('-inf'), float('inf'))
-        
+
 # @lc code=end›››
 

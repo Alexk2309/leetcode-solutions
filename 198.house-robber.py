@@ -12,17 +12,13 @@ class Solution:
         visited = set()
         memo = {}
         def scout(index):
-            if index >= n or index in visited:
-                return 0
-            
+            if index >= n or index in visited: return 0
+
             if index in memo: return memo[index]
 
             visited.add(index)
-            
             rob_current = nums[index] + scout(index + 2)
-            
             skip_current = scout(index + 1)
-            
             res = max(rob_current, skip_current)
 
             visited.remove(index)
@@ -32,7 +28,6 @@ class Solution:
 
 
         return scout(0)
-        
-        
+
 # @lc code=end
 

@@ -22,7 +22,7 @@ class Solution:
         def search(row, col, index):
             if index == wordLen: return True
             if not validLocation(row, col) or board[row][col] != word[index]: return False
-        
+
             visited.add(tuple((row, col)))
             res = search(row + 1, col, index + 1) or \
             search(row - 1, col, index + 1) or \
@@ -36,7 +36,6 @@ class Solution:
                 if search(i, j, 0): return True
 
         return False
-            
-        
+
 # @lc code=end
 

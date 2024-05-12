@@ -16,15 +16,9 @@ class Solution:
                 house2 = temp
 
             return house2
-        
+
         return max(nums[0],rob1(nums[:-1]), rob1(nums[1:]))
 
 
-
-
-
-        
-
-        
 # @lc code=end
 

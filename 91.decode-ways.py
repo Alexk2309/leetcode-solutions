@@ -14,15 +14,14 @@ class Solution:
             currN = 0
             if s[i - 1] != '0':
                 currN += n1
-    
+
             doubleDigit = s[i - 2: i]
             if 10 <= int(doubleDigit) <= 26:
                 currN += n2
-    
+
             n2, n1 = n1, currN
 
         return n1
 
-        
 # @lc code=end
 

@@ -24,11 +24,11 @@ class Solution:
 
         for i in range(n):
             for j in range(m):
-                if grid[i][j] == '1': 
+                if grid[i][j] == '1':
                     dfs(i, j)
                     numIslands += 1
 
         return numIslands
-                
+
 # @lc code=end
 

@@ -33,6 +33,6 @@ class Solution:
         traverse(root, 0)
 
         return heightArray
-        
+
 # @lc code=end
 

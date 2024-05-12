@@ -23,7 +23,7 @@ class Solution:
             visited.add(current)
             for neighbour in graph.get(current, []):
                 if not dfs(neighbour): return False
-    
+
             visited.remove(current)
             graph[current] = []
             return True
@@ -33,6 +33,6 @@ class Solution:
                 return False
         return True
 
-        
+
 # @lc code=end
 

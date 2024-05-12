@@ -13,7 +13,7 @@ class Solution:
         def dfs(row, col):
             if row < 0 or row >= n \
             or col < 0 or col >= m \
-                or grid[row][col] == 0: 
+                or grid[row][col] == 0:
                 return 0
             grid[row][col] = 0
             res = 1
@@ -30,7 +30,4 @@ class Solution:
 
         return greatest
 
-
-
-        
 # @lc code=end

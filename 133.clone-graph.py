@@ -21,15 +21,15 @@ class Solution:
         def dfs(node):
             if node in visited: return visited[node]
             nodeClone = Node(node.val)
-            visited[node] = nodeClone 
-            
+            visited[node] = nodeClone
+
             for neighbour in node.neighbors:
                 res = dfs(neighbour)
                 nodeClone.neighbors.append(res)
 
-            return nodeClone 
+            return nodeClone
 
         return dfs(node) if node else None
-        
+
 # @lc code=end
 

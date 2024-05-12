@@ -7,8 +7,8 @@
 # @lc code=start
 class Solution:
     def findMin(self, nums: List[int]) -> int:
-        #[4,5,6,7,0,1,2]
-        #l      m
+        # [4,5,6,7,0,1,2]
+        # l      m
 
         # Pick the right side because, the middle should always be less than the right side in normal binary search.
         # If nums[mid] <= nums[r], this means that the binary array is correct.

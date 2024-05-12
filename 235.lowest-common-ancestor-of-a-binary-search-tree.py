@@ -21,6 +21,5 @@ class Solution:
         else:
             return root
 
-        
 # @lc code=end
 

@@ -23,5 +23,5 @@ class Solution:
         find(root)
 
         return visited[k - 1]
-        
+
 # @lc code=end

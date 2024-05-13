@@ -22,5 +22,6 @@ class Solution:
             if slow == fast: return True
 
         return False
+
 # @lc code=end
 
